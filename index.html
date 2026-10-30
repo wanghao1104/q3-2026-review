@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>2026年第三季度述职报告 · AI与人协同下的事务变迁与个人价值</title>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#14171c; --ink-2:#4a5361; --ink-3:#7c8798;
+  --line:#e3e7ed; --line-2:#eef1f5;
+  --accent:#2b5cd9; --accent-soft:#e8eefc;
+  --c1:#e07b39; --c2:#2b5cd9; --c3:#12a594; --c4:#8b5cf6; --c5:#9aa5b4;
+  --up:#12a594; --down:#e07b39;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px -12px rgba(16,24,40,.12);
+  --radius:14px;
+}
+:root[data-theme="dark"]{
+  --bg:#0e1116; --panel:#161b22; --ink:#e8ecf2; --ink-2:#a8b3c2;
+  --ink-3:#7c8798; --line:#252c36; --line-2:#1e242c;
+  --accent:#6d94ff; --accent-soft:#1b2740;
+  --c1:#f0955a; --c2:#6d94ff; --c3:#2dc0ae; --c4:#a78bfa; --c5:#8b95a5;
+  --up:#2dc0ae; --down:#f0955a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.8;-webkit-font-smoothing:antialiased;
+}
+/* 全页单一栏宽：正文、卡片、表格、图表一律由 .wrap 约束，右缘严格对齐。
+   内容区约 792px ≈ 52 汉字/行，兼顾中文可读性与五列表格的展示宽度。
+   不要给正文单独设 max-width —— 那会让文字比同排的卡片/表格短一截 */
+.wrap{max-width:840px;margin:0 auto;padding:0 24px}
+
+/* ---------- 顶栏 ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:58px}
+.brand{font-weight:700;font-size:14.5px;letter-spacing:.3px;white-space:nowrap}
+.brand span{color:var(--ink-3);font-weight:500}
+nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{color:var(--ink-2);text-decoration:none;font-size:13.5px;padding:6px 11px;border-radius:8px;white-space:nowrap;transition:.18s}
+nav a:hover{background:var(--line-2);color:var(--ink)}
+nav a.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.tgl{border:1px solid var(--line);background:var(--panel);color:var(--ink-2);width:34px;height:34px;
+  border-radius:9px;cursor:pointer;font-size:15px;line-height:1;flex:none;transition:.18s}
+.tgl:hover{border-color:var(--accent);color:var(--accent)}
+.prog{position:absolute;left:0;bottom:-1px;height:2px;background:var(--accent);width:0}
+
+/* ---------- 封面 ---------- */
+header.hero{padding:64px 0 40px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--accent);
+  background:var(--accent-soft);padding:5px 12px;border-radius:999px;font-weight:600;letter-spacing:.5px}
+h1{font-size:clamp(28px,4.4vw,42px);line-height:1.28;font-weight:700;letter-spacing:-.5px;margin:20px 0 10px}
+.sub{font-size:clamp(16px,2.2vw,19px);color:var(--ink-2);font-weight:500;line-height:1.6}
+.meta{margin-top:22px;color:var(--ink-3);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 16px}
+.meta b{font-weight:600;color:var(--ink-2)}
+
+/* ---------- KPI ---------- */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:14px;margin-top:36px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--k,var(--accent))}
+.kpi .n{font-size:34px;font-weight:700;letter-spacing:-1px;font-variant-numeric:tabular-nums;color:var(--k,var(--ink));line-height:1.2}
+.kpi .n small{font-size:16px;font-weight:600;margin-left:2px}
+.kpi .l{font-size:13px;color:var(--ink-2);margin-top:4px}
+.kpi .d{font-size:12px;color:var(--ink-3);margin-top:6px;line-height:1.5}
+
+/* ---------- 区块 ---------- */
+section{padding:46px 0;border-top:1px solid var(--line)}
+.sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+.sec-n{font-size:12px;font-weight:700;color:var(--accent);background:var(--accent-soft);
+  padding:3px 9px;border-radius:6px;letter-spacing:1px;flex:none}
+h2{font-size:22px;font-weight:700;letter-spacing:-.3px}
+h3{font-size:16.5px;font-weight:650;margin:26px 0 10px}
+p{color:var(--ink-2);margin:12px 0}
+p strong,li strong{color:var(--ink);font-weight:650}
+.lead{font-size:16px;color:var(--ink)}
+.note{font-size:12.5px;color:var(--ink-3);border-left:2px solid var(--line);padding-left:12px;margin:16px 0}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);margin:20px 0}
+.callout{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 22%,transparent);
+  border-radius:var(--radius);padding:18px 20px;margin:22px 0}
+.callout p{color:var(--ink);margin:0}
+
+/* ---------- 结构位移图 ---------- */
+.ctrl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px}
+.seg{display:inline-flex;background:var(--line-2);border:1px solid var(--line);border-radius:10px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:13px;
+  padding:6px 14px;border-radius:8px;cursor:pointer;transition:.18s}
+.seg button.on{background:var(--panel);color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.hint{font-size:12.5px;color:var(--ink-3);margin-left:auto}
+
+.stack{display:flex;height:44px;border-radius:9px;overflow:hidden;background:var(--line-2);margin-bottom:6px}
+.stack i{display:block;transition:width .7s cubic-bezier(.4,0,.2,1),opacity .2s;cursor:pointer;position:relative}
+.stack i:hover{opacity:.82}
+.stack i span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:11.5px;color:#fff;font-weight:600;font-style:normal;font-variant-numeric:tabular-nums;
+  text-shadow:0 1px 2px rgba(0,0,0,.25);white-space:nowrap;overflow:hidden}
+.stackrow{margin:18px 0}
+.stackrow .lab{display:flex;justify-content:space-between;font-size:13px;margin-bottom:7px}
+.stackrow .lab b{font-weight:650}
+.stackrow .lab em{font-style:normal;color:var(--ink-3);font-size:12.5px}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.legend button{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--panel);
+  color:var(--ink-2);font:inherit;font-size:12.5px;padding:6px 11px;border-radius:999px;cursor:pointer;transition:.18s}
+.legend button:hover{border-color:var(--ink-3)}
+.legend button.mute{opacity:.4}
+.legend .dot{width:9px;height:9px;border-radius:3px;flex:none}
+
+/* ---------- 表格 ---------- */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:13.5px}
+th,td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--line-2);white-space:nowrap;font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left;white-space:normal;min-width:200px}
+thead th{background:var(--line-2);color:var(--ink-2);font-weight:600;font-size:12.5px;border-bottom:1px solid var(--line)}
+tbody tr{transition:background .15s;cursor:default}
+tbody tr:hover{background:var(--accent-soft)}
+tbody tr:last-child td{border-bottom:0}
+tr.tot td{font-weight:650;background:var(--line-2);color:var(--ink)}
+td .swatch{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:8px;vertical-align:1px}
+.delta{font-weight:650;font-variant-numeric:tabular-nums}
+.delta.dn{color:var(--down)} .delta.up{color:var(--up)} .delta.fl{color:var(--ink-3)}
+
+/* ---------- 效率图 ---------- */
+.effgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.effgrid{grid-template-columns:1fr}}
+.eff{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.eff h4{font-size:13.5px;font-weight:650;margin-bottom:2px}
+.eff .cap{font-size:12px;color:var(--ink-3);margin-bottom:16px}
+.bars{display:flex;align-items:stretch;gap:14px;height:172px}
+.bars .b{flex:1;min-width:0;display:flex;flex-direction:column;height:100%}
+/* track 独占一段确定高度，柱子 flex:none 退出收缩计算——
+   否则百分比高度会被 flex-shrink 压平，柱高不再反映数值 */
+.bars .track{flex:1 1 auto;min-height:0;display:flex;align-items:flex-end;justify-content:center;padding-top:24px}
+.bars .col{flex:none;width:100%;max-width:64px;height:0;border-radius:7px 7px 3px 3px;position:relative;
+  transition:height .9s cubic-bezier(.34,1.1,.5,1)}
+.bars .v{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:7px;
+  font-size:12.5px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bars .x{flex:none;text-align:center;font-size:12px;color:var(--ink-3);padding-top:8px}
+
+/* ---------- 可展开卡 ---------- */
+.acc{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);overflow:hidden;margin:12px 0}
+.acc>button{width:100%;display:flex;align-items:center;gap:14px;padding:16px 18px;background:transparent;
+  border:0;font:inherit;color:var(--ink);cursor:pointer;text-align:left;transition:background .15s}
+.acc>button:hover{background:var(--line-2)}
+.acc .idx{width:26px;height:26px;flex:none;border-radius:8px;background:var(--accent-soft);color:var(--accent);
+  font-size:12.5px;font-weight:700;display:grid;place-items:center}
+.acc .ttl{font-weight:650;font-size:14.5px;line-height:1.5}
+.acc .chev{margin-left:auto;color:var(--ink-3);transition:transform .25s;flex:none}
+.acc.open .chev{transform:rotate(180deg)}
+.acc .body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.acc .body-in{padding:0 18px 18px 58px;color:var(--ink-2);font-size:14px}
+@media(max-width:560px){.acc .body-in{padding-left:18px}}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.chip{font-size:12px;background:var(--line-2);border:1px solid var(--line);color:var(--ink-2);padding:4px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+
+/* ---------- 标签页 ---------- */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:22px 0 0;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{border:0;background:transparent;font:inherit;font-size:14px;color:var(--ink-3);padding:11px 14px;
+  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:.18s}
+.tabs button:hover{color:var(--ink-2)}
+.tabs button.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:650}
+.pane{display:none;animation:fade .3s ease}
+.pane.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.tagline{display:inline-block;font-size:12px;font-weight:650;color:var(--accent);background:var(--accent-soft);
+  padding:3px 10px;border-radius:6px;margin-bottom:10px}
+
+/* ---------- 下季度 ---------- */
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:14px;margin-top:20px}
+.next .n{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);
+  border-top:3px solid var(--k,var(--accent))}
+.next .n h4{font-size:14.5px;font-weight:650;margin-bottom:8px;line-height:1.5}
+.next .n p{font-size:13.5px;margin:0}
+
+footer{padding:34px 0 60px;border-top:1px solid var(--line);color:var(--ink-3);font-size:12.5px}
+.reveal{opacity:0;transform:translateY(14px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+@media print{
+  .topbar,.tgl,.ctrl,.legend,.tabs{display:none}
+  .reveal{opacity:1!important;transform:none!important}
+  .pane{display:block!important}
+  .acc .body{max-height:none!important}
+  .acc .chev{display:none}
+  section{break-inside:auto;page-break-inside:auto}
+  .card,.acc,.kpi,.next .n,.tablewrap{break-inside:avoid;page-break-inside:avoid}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff}
+}
+
+/* ---------- Q3 补充：文字型表格 ---------- */
+table.txt{min-width:600px}
+table.txt th,table.txt td{text-align:left;white-space:normal;vertical-align:top;font-variant-numeric:normal}
+table.txt th:first-child,table.txt td:first-child{min-width:150px;font-weight:650;color:var(--ink)}
+table.txt td{color:var(--ink-2)}
+.next.four{grid-template-columns:repeat(2,1fr)}
+@media(max-width:600px){.next.four{grid-template-columns:1fr}}
+table.txt th:first-child,table.txt td:first-child{min-width:176px}
+@media print{.pane{margin-bottom:14px}.pane::before{content:attr(data-label);display:block;font-weight:700;color:var(--accent);margin-top:12px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="prog" id="prog"></div>
+  <div class="wrap">
+    <div class="brand">2026 Q3 述职 <span>· 王颢</span></div>
+    <nav id="nav">
+      <a href="#s1">核心结论</a>
+      <a href="#s2">AI与人协同</a>
+      <a href="#s3">事务变化</a>
+      <a href="#s4">人的价值</a>
+      <a href="#s5">第四季度</a>
+    </nav>
+    <button class="tgl" id="tgl" title="切换深/浅色" aria-label="切换深色或浅色模式">◐</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">2026年第三季度 · 述职报告</div>
+  <h1>2026年第三季度述职报告</h1>
+  <div class="sub">AI与人协同下的事务变迁与个人价值</div>
+  <div class="meta">
+    <span><b>王颢</b></span><span>·</span>
+    <span>项目管理与审计部（非游）</span><span>·</span>
+    <span>高级项目管理经理</span><span>·</span>
+    <span><b>P7</b></span><span>·</span>
+    <span>2026年7月1日至9月30日</span>
+  </div>
+</header>
+
+<!-- 一 -->
+<section id="s1" class="reveal">
+  <div class="sec-h"><span class="sec-n">01</span><h2>本季度核心结论</h2></div>
+  <p class="lead">本季度，AI更多参与资料整理、方案推演、文档起草和规则检查。我的工作相应集中到<strong>问题定义、方案取舍、业务口径和结果核对</strong>。</p>
+  <div class="callout">
+    <p>具体事务从H2目标推导、海外资产应用分析，逐步推进到经营数据需求、生产治理标准及验收工程建设。季度内形成了<strong>方案、口径、标准和工具</strong>的阶段性成果；<strong>Neopets合约在季度结束时已进入正式签署流程</strong>。</p>
+  </div>
+</section>
+
+<!-- 二 -->
+<section id="s2" class="reveal">
+  <div class="sec-h"><span class="sec-n">02</span><h2>AI与人的协同</h2></div>
+  <div class="tablewrap" style="margin-top:18px">
+    <table class="txt">
+      <thead><tr><th>具体事务</th><th>AI主要承担</th><th>我重点承担</th></tr></thead>
+      <tbody>
+        <tr><td><span class="swatch" style="background:var(--c2)"></span>H2目标与AI创业平台</td><td>展开目标、比较路径、整理方案和讨论材料</td><td>核对经营意图、资源约束及商业前提，判断优先级和阶段验证条件</td></tr>
+        <tr><td><span class="swatch" style="background:var(--c3)"></span>经营数据建设</td><td>梳理指标、源表与字段，起草和检查配套文件</td><td>明确指标回答什么问题、怎样计算、数据如何对应，以及由谁确认</td></tr>
+        <tr><td><span class="swatch" style="background:var(--c1)"></span>生产数据治理</td><td>整理问题、展开检查项、辅助复算和检查工程搭建</td><td>核对业务事实与来源证据，判断材料能否支持验收结论</td></tr>
+        <tr><td><span class="swatch" style="background:var(--c4)"></span>海外资产与授权</td><td>整理合约信息、对照条款、草拟问题和意见</td><td>判断授权与履约责任，参与协商，推动合约进入正式流程</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p>AI扩大了分析和材料处理的范围。人的投入则更多用于<strong>判断这些产出是否符合业务实际、能否进入执行</strong>。</p>
+  </div>
+</section>
+
+<!-- 三 -->
+<section id="s3" class="reveal">
+  <div class="sec-h"><span class="sec-n">03</span><h2>事务发生的变化</h2></div>
+
+  <div class="tabs" id="tabs">
+    <button class="on" data-t="0">7月 · 目标与路径</button>
+    <button data-t="1">8月 · 经营逻辑与数据要求</button>
+    <button data-t="2">9月 · 治理与验证</button>
+  </div>
+
+  <div class="pane on" data-p="0" data-label="7月">
+    <h3>7月，重点是目标与路径</h3>
+    <p>围绕H2规划开展目标推导工具、战略调整看板和资源调度设计，同时推进海外资产应用及可披露数据筹备。</p>
+    <div class="chips"><span class="chip">目标推导工具</span><span class="chip">战略调整看板</span><span class="chip">资源调度设计</span><span class="chip">海外资产应用</span><span class="chip">可披露数据筹备</span></div>
+  </div>
+
+  <div class="pane" data-p="1" data-label="8月">
+    <h3>8月，重点转向经营逻辑与数据要求</h3>
+    <p>分析AI创业平台的商业前提，并将经营问题逐步落实为指标口径、源数据和板块承接要求。</p>
+    <div class="chips"><span class="chip">AI创业平台商业前提</span><span class="chip">指标口径</span><span class="chip">源数据</span><span class="chip">板块承接要求</span></div>
+  </div>
+
+  <div class="pane" data-p="2" data-label="9月">
+    <h3>9月，进一步推进治理与验证</h3>
+    <p>经营数据工作推进至V8.5相关内容；生产侧开展L1链路验收、P90复算、验收标准及检查工程建设。Neopets合约经条款讨论、协议审阅和意见处理，季度末进入正式签署流程。</p>
+    <div class="chips"><span class="chip">经营数据 V8.5</span><span class="chip">L1链路验收</span><span class="chip">P90复算</span><span class="chip">验收标准</span><span class="chip">检查工程</span><span class="chip">Neopets合约进入正式签署流程</span></div>
+  </div>
+
+  <div class="callout">
+    <p>工作内容由单项分析和审查，进一步延伸到<strong>可复用的口径、规则与检查方法建设</strong>，并推动具体事项进入实施或正式流程。</p>
+  </div>
+</section>
+
+<!-- 四 -->
+<section id="s4" class="reveal">
+  <div class="sec-h"><span class="sec-n">04</span><h2>人的价值体现在哪里</h2></div>
+  <div id="accs"></div>
+</section>
+
+<!-- 五 -->
+<section id="s5" class="reveal">
+  <div class="sec-h"><span class="sec-n">05</span><h2>第四季度重点</h2></div>
+  <div class="next four">
+    <div class="n" style="--k:var(--c3)">
+      <h4>1. 经营数据进入接入与核对</h4>
+      <p>验证字段、关联和计算口径，逐步形成可追溯的经营结果。</p>
+    </div>
+    <div class="n" style="--k:var(--c1)">
+      <h4>2. 生产标准进入实际验收</h4>
+      <p>检验规则和检查工程是否有效，跟踪整改与复验结果。</p>
+    </div>
+    <div class="n" style="--k:var(--c4)">
+      <h4>3. 授权安排衔接业务应用</h4>
+      <p>跟进Neopets合约签署，继续明确履约责任和使用条件，推动具体应用。</p>
+    </div>
+    <div class="n" style="--k:var(--c2)">
+      <h4>4. 改进协同与成果记录</h4>
+      <p>保留必要的人工判断和复核，写清关键取舍、推动动作及实际结果。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  2026年第三季度述职报告 · 王颢 · 项目管理与审计部（非游）
+</footer>
+
+</div>
+<script>
+/* ===== 主题 ===== */
+(function(){
+  var r=document.documentElement, k='q3-theme', saved=null;
+  try{saved=localStorage.getItem(k)}catch(e){}
+  if(saved) r.setAttribute('data-theme',saved);
+  else if(matchMedia('(prefers-color-scheme:dark)').matches) r.setAttribute('data-theme','dark');
+  document.getElementById('tgl').onclick=function(){
+    var n=r.getAttribute('data-theme')==='dark'?'light':'dark';
+    r.setAttribute('data-theme',n); try{localStorage.setItem(k,n)}catch(e){}
+  };
+})();
+
+/* ===== 折叠卡：人的价值 ===== */
+var ITEMS=[
+ {t:'把问题定义清楚',
+  b:'经营数据建设中，明确经营看板与作业看板分别需要回答的问题，再确定指标、来源和责任，避免只增加数据与页面。',
+  c:['经营看板','作业看板','指标·来源·责任']},
+ {t:'对方案作出取舍',
+  b:'目标推导、AI创业平台及海外资产工作中，结合业务事实、资源和履约条件，判断哪些建议可以推进，哪些仍需验证。',
+  c:['业务事实','资源','履约条件']},
+ {t:'守住结果判断',
+  b:'生产治理中，回到原始记录和复算依据，区分材料完成、系统实现与验收通过；在免罚权限、延期预警和环境隔离等事项中，检查工具是否真正执行了管理要求。',
+  c:['材料完成 ≠ 系统实现 ≠ 验收通过','免罚权限','延期预警','环境隔离']},
+ {t:'推动责任落实',
+  b:'将分析意见转化为字段、规则、交付和核对要求，与业务及技术方持续对齐；在Neopets合约处理中，参与授权细则与责任安排的协商，推动合约进入正式签署流程。<strong>AI可以协助形成材料，责任确认、分歧处理和实际推进仍需由人承担。</strong>',
+  c:['字段·规则·交付·核对','业务及技术方对齐','Neopets授权细则与责任安排']}
+];
+var accs=document.getElementById('accs');
+ITEMS.forEach(function(it,i){
+  var d=document.createElement('div'); d.className='acc';
+  d.innerHTML='<button><span class="idx">'+(i+1)+'</span><span class="ttl">'+it.t+'</span>'+
+    '<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>'+
+    '<div class="body"><div class="body-in">'+it.b+
+    '<div class="chips">'+it.c.map(function(x){return '<span class="chip">'+x+'</span>'}).join('')+'</div></div></div>';
+  var body=d.querySelector('.body'), btn=d.querySelector('button');
+  btn.setAttribute('aria-expanded','false');
+  btn.onclick=function(){
+    var open=d.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    body.style.maxHeight=open?body.scrollHeight+'px':0;
+  };
+  accs.appendChild(d);
+  { d.classList.add('open'); btn.setAttribute('aria-expanded','true');
+    requestAnimationFrame(function(){body.style.maxHeight=body.scrollHeight+'px'}); }
+});
+function refitAccs(){
+  document.querySelectorAll('.acc.open .body').forEach(function(b){
+    b.style.transition='none'; b.style.maxHeight=b.scrollHeight+'px';
+    requestAnimationFrame(function(){b.style.transition=''});
+  });
+}
+if(window.ResizeObserver){ new ResizeObserver(refitAccs).observe(accs); }
+addEventListener('resize',refitAccs);
+
+/* ===== 标签页 ===== */
+document.getElementById('tabs').setAttribute('role','tablist');
+document.querySelectorAll('#tabs button').forEach(function(b){
+  b.setAttribute('role','tab');
+  b.setAttribute('aria-selected',b.classList.contains('on')?'true':'false');
+  b.onclick=function(){
+    document.querySelectorAll('#tabs button').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});
+    document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('on')});
+    b.classList.add('on'); b.setAttribute('aria-selected','true');
+    document.querySelector('.pane[data-p="'+b.dataset.t+'"]').classList.add('on');
+  };
+});
+
+/* ===== 滚动动画 / 进度 / 导航高亮 ===== */
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:0,rootMargin:'0px 0px -12% 0px'});
+document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)});
+
+var prog=document.getElementById('prog'), links=[].slice.call(document.querySelectorAll('#nav a'));
+function onScroll(){
+  var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+  prog.style.width=(max>0?h.scrollTop/max*100:0)+'%';
+  var cur=null;
+  links.forEach(function(a){
+    var s=document.querySelector(a.getAttribute('href'));
+    if(s && s.getBoundingClientRect().top<=120) cur=a;
+  });
+  links.forEach(function(a){a.classList.toggle('on',a===cur)});
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+/* ===== 打印前展开全部内容 ===== */
+function finalizeAll(){
+  document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in')});
+  document.querySelectorAll('.acc').forEach(function(d){
+    d.classList.add('open'); d.querySelector('.body').style.maxHeight='none';
+  });
+}
+addEventListener('beforeprint',finalizeAll);
+if(matchMedia('print').matches) finalizeAll();
+</script>
+</body>
+</html>
